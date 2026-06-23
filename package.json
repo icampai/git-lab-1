@@ -1,5 +1,8 @@
 {
   "name": "analytics-dashboard",
   "version": "1.0.0",
-  "scripts": { "start": "node src/dashboard.js" }
+  "scripts": {
+    "start": "node src/dashboard.js",
+    "test": "node test.js"
+   }
 }
