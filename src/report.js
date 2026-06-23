@@ -1,5 +1,6 @@
 function generateReport(metrics) {
- return metrics.map(row => `${row.page}: ${row.visits}`) .join("\n");
+ const sortedMetrics = [...metrics].sort( (a, b) => b.visits - a.visits );
+ return sortedMetrics.map(row => `${row.page}: ${row.visits}`).join("\n");
 }
 
 function totalVisits(metrics) {
